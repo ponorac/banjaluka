@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Banja Luka">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Helena Ponorac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banja Luka</title>
+    <link rel="stylesheet" type="text/css" href="css/reservierung.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+</head>
+<div class="bgR"></div>
+<div class="container">
+    <div class="jumbotron">
+      <h1>Reservieren Sie Ihr Hotelzimmer jetzt online</h1>
+    </div>
+</div>
+<body>
+    <header>
+        <div class="bs-example">
+            <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top">
+    
+                <h1 class="tt" data-toggle= "tooltip">Banja Luka</h1>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a  class="nav-item nav-link active" href="index.html">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Über Banja Luka</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="geschichte.html">Geschichte</a>
+                                    <a class="dropdown-item" href="kunstkultur.html">Kunst und Kultur</a>
+                                </div>
+                        </div>
+                        <a class="nav-item nav-link" href="küche.html">Essen & Trinken</a>
+                        <a class="nav-item nav-link" href="unterkünfte.html">Unterkünfte</a>
+                    </div>
+                 </div>
+            </nav>   
+        </div>
+    </header>
+<div class="card">
+    <div class="card-body">
+
+        <div id="pdf"> 
+            <form>
+                <label for="hotels">Wählen Sie ein Hotel aus:</label>
+                        <select name="hotels" id="hotels">
+                                <option>Bosna</option>
+                                <option>Grand</option>
+                                <option>Cezar</option>
+                                <option>Jelena</option>
+                        </select>
+                
+                <br/>Vorname: <input type="text" id="data_2" name="data_2"/> <br/>
+                <br/>Nachname: <input type="text" id="data_3" name="data_3"/> <br/>
+                <br/>Telefon: <input type="text" id="data_4" name="data_4"/> <br/>
+                <br/>E-Mail: <input type="text" id="data_5" name="data_5"/> <br/>
+                
+                <div style="padding-bottom: 18px;">Von<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+                <div style="padding-bottom: 18px;">Bis<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript">new Pikaday({ field: document.getElementById('data_7') });</script>
+                <br/>Fragen/Kommentare: <input type="text" id="data_8" name="data_8"/><br/>
+                <br/><input onClick="popup()" name="skip_Submit" value="Ich bin fertig" type="submit"/></div><br/>
+              
+            </form>
+        </div>
+       
+            <nav class="navbar navbar-light bg-light">
+                <a class="btn btn-info" role="button" href="unterkünfte.html">Schauen Sie noch einmal unsere Angebot</a>
+            </nav>
+
+            <!-- <div class="container">
+                 <input onclick="downloadPdf()" type="button" id="dwn-btn" value="Klicken Sie hier, um Ihre Reservierungsbestätigung herunterzuladen"/>
+            </div> -->
+             
+    </div>
+
+    <footer>
+        
+        <div class="card" id="footer-card">
+            <div class="card-body">
+                <div class="footer_div">
+                    <p id="copyright" style="text-align: center;">Copyright &copy; Helena Ponorac</p>	     
+                </div>
+            
+        
+            </div>
+        </div>	
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+     <script src="js/bl.js"></script>
+
+
+</body>
+</html>

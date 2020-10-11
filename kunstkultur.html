@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Banja Luka">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Helena Ponorac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banja Luka</title>
+<link rel="stylesheet" type="text/css" href="css/webseite_ponorac.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top">
+
+            <h1 class="tt" data-toggle= "tooltip">Banja Luka</h1>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a  class="nav-item nav-link active" href="index.html">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Über Banja Luka</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="geschichte.html">Geschichte</a>
+                            <a class="dropdown-item" href="kunstkultur.html">Kunst und Kultur</a>
+                         </div>
+                    </div>
+                    <a class="nav-item nav-link" href="küche.html">Essen & Trinken</a>
+                    <a class="nav-item nav-link" href="unterkünfte.html">Unterkünfte</a>
+                </div>
+             </div>
+        </nav>   
+    </div>
+</header>
+<div class="bg1"></div>
+<div class="header">
+    <h1>Kunst & Kultur</h1>
+</div>
+<div class="texts">
+    <p>Die Stadt verfügt mit der serbisch-orthodoxen Christ-Erlöser-Kathedrale (Saborni Hram Hrista Spasitelja) über das einzige Kirchengebäude in Südosteuropa mit goldenen Kuppeln. Die Kirche wurde im Zweiten Weltkrieg beschädigt und schließlich von den Ustascha zerstört, zwischen 1995 und 2005 aber wieder originalgetreu aufgebaut.</p>
+    <p>In Lazarevo befinden sich zwei Sakralbauten, nämlich zum einen das römisch-katholische Trappistenkloster Marija-Zvijezda, zu Beginn des 20. Jahrhunderts das einzige Trappistenkloster in Südosteuropa und mit 219 Mönchen damals die größte Trappistenabtei der Welt. Die serbisch-orthodoxe Kirche ist dem Hl. Großmärtyrer Fürst Lazar (Lazarica von Banja Luka) geweiht.</p>
+    <p>Im nördlichen Teil der Stadt in Zaluzani befindet sich die einzige Rennstrecke Bosnien-Herzegowinas. Es werden zwar oft Rennen ausgetragen, doch sie sind von geringer Bedeutung. Momentan sucht man nach Investoren, um die Rennstrecke und ihre Infrastruktur auf internationalen Standard auszubauen.</p>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+      <a href="#" class="tt" data-toggle="tooltip" title="Christ-Erlöser-Kathedrale">
+          <img class="img-fluid" src="images/bild2.jpg" alt="Chania" width="460" height="345">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="#" class="tt" data-toggle="tooltip" title="Herrengasse">
+          <img class="img-fluid" src="images/bild3.jpg" alt="Chania" width="460" height="345">  
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="#" class="tt" data-toggle="tooltip" title="Rafting am Fluss Vrbas">
+          <img class="img-fluid" src="images/bild4.jpg" alt="Chania" width="460" height="345"> 
+      </a>
+    </div>
+</div>
+<footer>
+        
+    <div class="card" id="footer-card">
+        <div class="card-body">
+            <div class="footer_div">
+                <p id="copyright" style="text-align: center;">Copyright &copy; Helena Ponorac</p>	     
+            </div>
+        
+    
+        </div>
+    </div>	
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/bl.js"></script>
+  <script>
+  
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+        });
+ 
+  </script>
+  
+    
+  
+ 
+</body>
+
+</html>    

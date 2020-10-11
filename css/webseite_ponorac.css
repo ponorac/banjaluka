@@ -1,0 +1,189 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+/* startseite */
+.bg {
+    
+    background-image: url("../images/bild2.jpg");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+
+h1{
+    text-align: center;
+    color: rgb(18, 18, 107);
+    font-size: 50px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#activity{
+    
+    width: 500px;
+    height: 500px;
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6{
+    float: left;
+    width: 30%;
+    padding: 20px;
+  
+}
+
+.div1{
+  margin: auto;
+  width: 50%;
+  padding: 50px;
+}
+
+
+
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color:  rgb(18, 18, 107);
+  }
+
+
+h2,
+#div2,
+#Header{ text-align: center;
+    color: rgb(18, 18, 107);
+    font-size: 50px;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+
+/* kunstundkultur */
+.bg1 {
+    
+    background-image: url("../images/galerie.jpg");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+ }
+
+.texts{ 
+    margin: auto;
+    width: 50%;
+    width: 100%;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /* geschichte */
+.header{ text-align: center;
+    color: rgb(18, 18, 107);
+    font-size: 50px;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+.mySlides {display:none;}
+
+
+
+/*küche*/
+.bg3 {
+    
+    background-image: url("../images/food1.jpg");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h5{
+    text-align: left;
+    text-decoration: bold;
+}
+
+#food{
+    margin-top: 50px;
+    font-size: 15px;
+    display: block;
+    
+}
+
+/*unterkünfte*/
+.bg2 {
+    background-image: url("../images/hotel0.jpg");
+    height: 70%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+img.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 200px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: grey;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
+.footer_div{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+

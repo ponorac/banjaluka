@@ -1,0 +1,25 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    
+  }
+
+  .bgR {
+    
+    background-image: url("../images/bild2.jpg");
+    height: 50%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+ }
+
+ h1{
+    text-align: center;
+    color: rgb(18, 18, 107);
+    font-size: 50px;
+}
+.post,
+.hotels{
+    padding-bottom: 18px;
+    color: red;
+}
